@@ -33,10 +33,10 @@ class VideoService:
             self._draw_grid()
     
     def draw_item(self, item):
-        """Draws the given actor's text on the screen.
+        """Draws the given falling item on the screen.
 
         Args:
-            actor (Actor): The actor to draw.
+            item(falling_item): The falling item to draw.
         """ 
         text = item.get_text()
         x = item.get_position().get_x()
@@ -46,6 +46,11 @@ class VideoService:
         pyray.draw_text(text, x, y, font_size, color)
 
     def draw_scoreBoard(self, scoreBoard):
+        """Draws the the score board on the screen.
+
+        Args:
+            scoreBoard(scoreBoard): The game score board to draw.
+        """ 
         text = scoreBoard.getScoreBoardName() + str(scoreBoard.getScore())
         x = scoreBoard.get_position().get_x()
         y = scoreBoard.get_position().get_y()
@@ -57,7 +62,7 @@ class VideoService:
         """Draws the text for the given list of items on the screen.
 
         Args:
-            actors (list): A list of actors to draw.
+            items(list): A list of items to draw.
         """ 
         for item in items:
             self.draw_item(item)
