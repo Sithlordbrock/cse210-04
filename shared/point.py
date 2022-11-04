@@ -19,19 +19,7 @@ class Point:
         self._x = x
         self._y = y
 
-    def add(self, other):
-        """Gets a new point that is the sum of this and the given one.
-
-        Args:
-            other (Point): The Point to add.
-
-        Returns:
-            Point: A new Point that is the sum.
-        """
-        x = self._x + other.get_x()
-        y = self._y + other.get_y()
-        return Point(x, y)
-
+    
     def equals(self, other):
         """Whether or not this Point is equal to the given one.
 
