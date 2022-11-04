@@ -1,8 +1,8 @@
 from shared.point import Point
 from shared.color import Color
+
 class scoreBoard():
     def __init__(self):
-        # create the banner
         self.scoreBoardName = "Score"
         self.score = 0
         self.fontSize = 15
@@ -21,14 +21,12 @@ class scoreBoard():
     def setPosition(self, position):
         self.position = position
     
-    #sets scoreboard name
     def set_text(self, text):
         self.scoreBoardName = text
 
-
+#Getters
     def getScoreBoardName(self):
         return self.scoreBoardName
-
 
     def getScore(self):
         return self.score
