@@ -1,31 +1,20 @@
-# This is the main file!
 from classes.player import player
 from classes.scoreBoard import scoreBoard
-
 from classes.director import Director
-
 from services.keyboard_service import KeyboardService
 from services.video_service import VideoService
-
 from shared.color import Color
 from shared.point import Point
-
 
 FRAME_RATE = 12
 MAX_X = 900
 MAX_Y = 600
 CELL_SIZE = 15
 FONT_SIZE = 15
-COLS = 60
-ROWS = 40
 WHITE = Color(255, 255, 255)
-
-
 
 def main():
     
-
-    # create the score banner
     banner = scoreBoard()
     banner.set_text("Score: ")
     
