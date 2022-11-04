@@ -7,14 +7,16 @@ Team Thursday 8PM
 - Sayri Quinchiguango
 
 CLASSES
-(1) Director    - directs the game
-(2) FallingItem  - item that falls
-(3) Gem - a FallingItem that gains points
-(4) Rock - a FallingItem that loses points
-(5) Player - The hashtag thing that moves
-(6) Point - tells player/FallingItems what position on the board they are at
-(7) Keyboard_service - the inputs of your keyboard
-(8) Video_service - The pop up window for playing on 
+(1) Director - directs the game
+(2) falling_item - an item that falls vertically down the screen
+(3) Gem - a falling_item that gains one point per collision
+(4) Rock - a falling_item that loses one point per collision
+(5) scoreBoard - keeps track of player score
+(6) player - the player with a hashtag sign that moves around the screen
+(7) Point - tells player and falling_items their position on the board
+(8) Color - tells player and falling_items what color they are
+(9) KeyboardService - maps keyboard input to player movement
+(10) VideoService - prints all outcomes to the screen 
 
 GAME SPECIFICATION:
 https://byui-cse.github.io/cse210-course-competency/inheritance/materials/greed-specification.html
